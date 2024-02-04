@@ -14,7 +14,7 @@ jobs:
       - name: Build
         run: |
           wget -O bld.jar "https://hub.spigotmc.org/jenkins/job/BuildTools/171/artifact/target/BuildTools.jar"
-          java -jar bld.jar
+          java -jar bld.jar --rev 1.20.4
       - uses: actions/upload-artifact@v3
         with:
           name: Release
